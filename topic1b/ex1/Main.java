@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class Main {
   public static void main(String[] args) {
-    int[] numbers = PrintUtils.getNumbers();
+    int[] numbers = PrintUtils.getInts();
 
 
     Map<Boolean, List<Integer>> map = IntStream.of(numbers).boxed().collect(Collectors.partitioningBy(i ->

@@ -7,9 +7,9 @@ import java.util.stream.IntStream;
 
 public class Main {
   public static void main(String[] args) {
-    int[] numbers = PrintUtils.getNumbers();
+    int[] numbers = PrintUtils.getInts();
     IntSummaryStatistics intSummaryStatistics = IntStream.of(numbers).summaryStatistics();
-    System.out.printf("Минимальное из введенных чисел:%d%n",intSummaryStatistics.getMin());
-    System.out.printf("Максимальное из введенных чисел:%d",intSummaryStatistics.getMax());
+    System.out.printf("Минимальное из введенных чисел:%d%n", intSummaryStatistics.getMin());
+    System.out.printf("Максимальное из введенных чисел:%d", intSummaryStatistics.getMax());
   }
 }
